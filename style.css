@@ -1,0 +1,33 @@
+.body{ background-color: lightgray;}
+.container{
+    text-align: -webkit-center;
+    margin: 20px 0;
+}
+.box{
+  display: inline-block;  
+  font-size: 21px;
+  padding: 25px; 
+  min-width: 70px;
+  min-height: 70px; 
+}
+.box.draggable{ border: grey solid 4px; cursor: move;}
+.box.droppable{
+    border-style:  dashed;
+    background-color: lightgray;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+.droppable.droppable-hover {
+    /* background-color: #bee3f0; */
+    border-width: 5px;
+    transform: scale(1.1);
+  }
+
+.dropped{
+  pointer-events: none;
+  border-style: solid !important;
+}  
+.dragged{
+  pointer-events: none;
+  border: none !important;
+}
