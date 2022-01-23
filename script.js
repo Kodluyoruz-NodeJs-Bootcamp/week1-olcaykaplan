@@ -13,7 +13,7 @@ droppableElements.forEach((e) => {
 
 //functions
 function handleDragStart(e) {
-  console.log("dragging");
+    // set the data by the dragged element color
   e.dataTransfer.setData("color", e.target.style.backgroundColor);
 }
 
